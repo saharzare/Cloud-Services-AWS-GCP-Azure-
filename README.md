@@ -75,6 +75,7 @@ Real-World Use Cases & End-to-End Solutions
 Here are some hands-on projects you will build:
 
 Copy Data from Azure Blob Storage to SQL Database - Basic pipeline setup.
+
 Data Load from On-Prem SQL Server to Azure Data Lake
 
 #### 📢 Stay Connected
