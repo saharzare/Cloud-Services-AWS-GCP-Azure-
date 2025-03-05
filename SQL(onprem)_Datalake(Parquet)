@@ -57,3 +57,30 @@ o	Region: Choose the same region as your resource group.
 o	Version: Leave as default.
 o	Click Review + Create and then Create.
 
+Step 2: Setting Up SQL Server and Database
+1-	Install SQL Server and SSMS
+Download SQL Server Express:
+o	Go to the SQL Server download page and download SQL Server Express.
+o	Install SQL Server Express on your local machine.
+Download SQL Server Management Studio (SSMS):
+o	Download and install SSMS from the official Microsoft page.
+Load the AdventureWorks Database:
+o	Download the AdventureWorks sample database from the Microsoft website.
+2.	Restore the Database:
+o	Open SSMS and connect to your SQL Server instance.
+o	Right-click on Databases and select Restore Database.
+o	Choose Device and browse to the .bak file you downloaded.
+o	Restore the database.
+2-	Create a SQL User for Data Factory
+1.	Create a SQL Login:
+o	Open SSMS and connect to your SQL Server instance.
+o	Run the following SQL query to create a login and user:
+CREATE LOGIN username WITH password = '??????';
+CREATE USER username FOR LOGIN username;
+2.	Grant Permissions:
+o	Grant the user access to the AdventureWorks database:
+USE AdventureWorksDW2019;
+GRANT SELECT ON SCHEMA::dbo TO username;
+
+
+
