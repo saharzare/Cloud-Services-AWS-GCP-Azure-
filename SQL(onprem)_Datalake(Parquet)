@@ -1,10 +1,11 @@
-# Data pipeline SQL on-premise to Data Lake
+Data pipeline SQL on-premise to Data Lake
 
-## Step1- Setting Up the Azure Environment
-### 1-	Create a Resource Group
+Step1- Setting Up the Azure Environment
 
-#### 1-1-	Log in to Azure Portal: Go to portal.azure.com and sign in.
-#### 1-2- Create a Resource Group:
+1-	Create a Resource Group
+
+1-1-	Log in to Azure Portal: Go to portal.azure.com and sign in.
+1-2- Create a Resource Group:
 o	In the Azure portal, search for Resource Group in the search bar.
 o	Click Create.
 o	Fill in the details:
@@ -12,3 +13,47 @@ o	Fill in the details:
 	Resource Group Name: xxxx-RG.
 	Region: Choose the closest region.
 o	Click Review + Create and then Create.
+
+
+2-	Create a Storage Account (Azure Data Lake)
+
+2-1-	Search for Storage Account:
+o	In the Azure portal, search for Storage Account.
+o	Click Create.
+Fill in the Details:
+o	Subscription: Select your subscription.
+o	Resource Group: Select the resource group you created (e.g., Xxxx-RG).
+o	Storage Account Name: e.g., Xxxx-SG.
+o	Region: Choose the same region as your resource group.
+o	Enable Hierarchical Namespace: Check this box to enable Data Lake capabilities.
+o	Click Review + Create and then Create.
+Create Containers:
+o	Once the storage account is created, go to the storage account.
+o	Under Containers, create the container for raw data.
+
+3-	Create a Key Vault
+
+1.	Search for Key Vault:
+o	In the Azure portal, search for Key Vault.
+o	Click Create.
+2.	Fill in the Details:
+o	Subscription: Select your subscription.
+o	Resource Group: Select the resource group you created (Xxxx-RG).
+o	Key Vault Name:  Xxxx-KeyVault.
+o	Region: Choose the same region as your resource group.
+o	Pricing Tier: Standard.
+o	Click Review + Create and then Create.
+
+4-	 Create Azure Data Factory
+
+1.	Search for Data Factory:
+o	In the Azure portal, search for Data Factory.
+o	Click Create.
+2.	Fill in the Details:
+o	Subscription: Select your subscription.
+o	Resource Group: Select the resource group you created (e.g., Xxxx-RG).
+o	Name: e.g., Xxxx-DF.
+o	Region: Choose the same region as your resource group.
+o	Version: Leave as default.
+o	Click Review + Create and then Create.
+
