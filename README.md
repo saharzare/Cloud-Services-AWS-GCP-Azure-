@@ -46,6 +46,37 @@ Follow the documentation in each folder to complete the steps.
 
 Check back for regular updates as we add new content!
 
+#### 📂 Project Subjects
+
+Here are the key subjects this project will cover:
+
+ADF Architecture & Components
+
+Linked Services, Datasets & Pipelines
+
+Data Movement (Copy Activity, Data Flows, Integration Runtimes)
+
+Transformations & Data Processing
+
+Connecting to Databases, APIs & Cloud Services
+
+Triggering Pipelines & Scheduling Jobs
+
+Performance Optimization & Cost Management
+
+Security & Access Control in ADF
+
+Error Handling & Troubleshooting
+
+Real-World Use Cases & End-to-End Solutions
+
+#### 🏗️ Project List
+
+Here are some hands-on projects you will build:
+
+Copy Data from Azure Blob Storage to SQL Database - Basic pipeline setup.
+Data Load from On-Prem SQL Server to Azure Data Lake
+
 #### 📢 Stay Connected
 
 If you have any questions, feel free to open an issue or reach out!
