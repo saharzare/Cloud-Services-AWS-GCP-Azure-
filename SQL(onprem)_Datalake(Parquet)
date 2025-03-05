@@ -1,0 +1,14 @@
+# Data pipeline SQL on-premise to Data Lake
+
+## Step1- Setting Up the Azure Environment
+### 1-	Create a Resource Group
+
+#### 1-1-	Log in to Azure Portal: Go to portal.azure.com and sign in.
+#### 1-2- Create a Resource Group:
+o	In the Azure portal, search for Resource Group in the search bar.
+o	Click Create.
+o	Fill in the details:
+	Subscription: Select your subscription.
+	Resource Group Name: xxxx-RG.
+	Region: Choose the closest region.
+o	Click Review + Create and then Create.
